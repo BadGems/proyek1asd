@@ -117,7 +117,7 @@ public class SinglyLinkedList implements LinkedList{
     @Override
     public Object get(int index) {
         if (index < 0 || index >= size) {
-        return null; 
+            return null; 
         }
     
         Node temp = head;
@@ -142,7 +142,7 @@ public class SinglyLinkedList implements LinkedList{
     }
     @Override
     public void printReverse() {
-        for (int i = size - 1; i >= 0 ; i++) {
+        for (int i = size - 1; i >= 0 ; i--) {
             System.out.println(get(i));
         }        
     }
